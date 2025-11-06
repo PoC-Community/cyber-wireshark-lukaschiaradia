@@ -1,0 +1,17 @@
+J’ai ouvert le fichier gsm.pcapng dans Wireshark.  
+J’ai appliqué le filtre gsmtap  
+Les trames GSMTAP étaient marquées “Unknown version”, j’ai donc analysé la charge utile UDP 
+Le décodage manuel du champ hexadécimal a révélé un SMS au format GSM 7 bits
+
+FROM : +33600000000  
+TO : +33600000001  
+MESSAGE : “It’s cool !”
+
+Le message capturé montre qu’un SMS a été envoyé depuis **+33600000000** vers **+33600000001** avec le contenu :
+“It’s cool !”
+
+
+(apres correction)
+la traduction devais être faite en hexa et c'était gsm is awesome
+
+
