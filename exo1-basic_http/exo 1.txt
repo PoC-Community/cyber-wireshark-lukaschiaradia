@@ -1,0 +1,9 @@
+Le fichier de capture montre une communication HTTP entre un client local et un serveur web local.
+L’adresse source et destination 127.0.0.1 indique que la requête a été effectuée en local sur la même machine (boucle locale).
+
+
+Le corps de la requête contient les données au format JSON
+{
+  "username": "Groot",
+  "password": "Je_sappelle_Groot"
+}
