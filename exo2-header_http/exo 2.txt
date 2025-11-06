@@ -1,0 +1,10 @@
+Pour identifier les identifiants utilisés dans cette requête HTTP, j’ai commencé par appliquer le filtre suivant dans Wireshark :http.authorization
+
+J’ai ainsi trouvé une requête contenant la ligne suivante :Authorization: Basic dXNlcm5hbWU6cGFzc3dvcmQ=
+
+La partie située après Basic correspond à une chaîne encodée en Base64.
+Afin d’en connaître la valeur réelle, j’ai utilisé le site https://www.base64decode.org
+ pour la décoder.
+
+Après décodage, j’ai obtenu le résultat suivant :username:password
+Cela indique que l’utilisateur a utilisé “username” comme identifiant et “password” comme mot de passe dans son authentification HTTP Basic.
